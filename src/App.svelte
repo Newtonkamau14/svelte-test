@@ -1,5 +1,10 @@
 <script>
-  import Modal from "./Modal.svelte";
+  import Modal from "./components/Modal.svelte";
+  import Button from "./components/Button.svelte";
+  import Card from "./components/Card.svelte";
+  import Form from "./components/Form.svelte";
+  import Patient from "./components/Patient.svelte";
+  import PatientsKin from "./components/PatientsKin.svelte";
 
   export let name;
   let count = 0;
@@ -165,6 +170,15 @@
   {:else if num < 10}
     <p>Less than 10</p>
   {/if}
+
+  <Card>
+    <Button/>
+  </Card>
+
+  <Form>
+    <Patient/>
+    <PatientsKin/>
+  </Form>
 </main>
 
 <style>
